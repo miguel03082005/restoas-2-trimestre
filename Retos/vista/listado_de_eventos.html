@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 2</title>
+    <link rel="shortcut icon" href="img/innovacion.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body class="body">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary color2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="listado_de_eventos.html"><h4 class="letra">Reto 2: Listado de Eventos</h4></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="d-flex" role="search">
+                <a href="../index.html" class="btn btn-outline-danger" type="submit">Salir</a>
+            </form>
+        </div>
+    </nav>
+
+    <div class="contenedor">
+        <table class="table table-dark">
+            <thead>
+                <tr >
+                    <th scope="col" class="table-dark">N°</th>
+                    <th scope="col" class="table-dark">Nombre evento</th>
+                    <th scope="col" class="table-dark">Descripcion</th>
+                    <th scope="col" class="table-dark">Evento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="table-dark">1</th>
+                    <td class="table-dark">onclick</td>
+                    <td class="table-dark">Se produce cuando se da una clic al botón del ratón sobre un elemento de la página</td>
+                    <td class="table-dark"><button type="submit" class="btn btn-outline-danger" id="btn" onclick="rta(event)">Evento</button></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">2</th>
+                    <td class="table-dark">onchange</td>
+                    <td class="table-dark">Se desata este evento cuando cambia el estado de un elemento de formulario</td>
+                    <td class="table-dark">
+                        <label for="exampleInputEmail1" class="form-label">Ingresa una palabra:</label>
+                        <input type="text" class="form-control" id="palabra" onchange="ONCHANGE()">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">3</th>
+                    <td class="table-dark">onblur</td>
+                    <td class="table-dark">Se desata un evento onblur cuando un elemento pierde el foco de la aplicación</td>
+                    <td class="table-dark">
+                        <label for="exampleInputEmail1" class="form-label">Ingresa una palabra:</label>
+                        <input type="text" class="form-control" id="palabra1" aria-describedby="emailHelp" onblur="ONBLUR()">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">4</th>
+                    <td class="table-dark">onabort</td>
+                    <td class="table-dark">Este evento se produce cuando un usuario detiene la carga de una imagen</td>
+                    <td class="table-dark">
+                        <img name=img1 src="img/KIRITo.jpg" width="200px" height="100px" onabort="ONABORT()"> 
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">6</th>
+                    <td class="table-dark">ondragdrop</td>
+                    <td class="table-dark">Se produce cuando un usuario suelta algo que había arrastrado sobre la página web</td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">7</th>
+                    <td class="table-dark">onerror</td>
+                    <td class="table-dark">Se produce cuando no se puede cargar un documento o una imagen y esta queda rota</td>
+                    <td class="table-dark"><img src="img/KIRIT.jpg" width="200px" height="100px" onerror="ONERROR()"><p id="demo"></p></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">8</th>
+                    <td class="table-dark">onfocus</td>
+                    <td class="table-dark">El evento onfocus es lo contrario de onblur. Se produce cuando un elemento<br>de la página o la ventana ganan el foco de la aplicación.</td>
+                    <td class="table-dark">
+                        <label for="exampleInputEmail1" class="form-label">Ingresa una palabra:</label>
+                        <input type="text" class="form-control" id="palabra2" aria-describedby="emailHelp" onfocus="ONFOCUS(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">9</th>
+                    <td class="table-dark">onkeydown</td>
+                    <td class="table-dark">Este evento se produce en el instante que un usuario presiona una tecla</td>
+                    <td class="table-dark">
+                        <label for="exampleInputEmail1" class="form-label">Ingresa una palabra:</label>
+                        <input type="text" class="form-control" id="palabra3" aria-describedby="emailHelp" onkeydown="ONKEYDOWN()">
+                        <p id="demo1"></p></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">10</th>
+                    <td class="table-dark">onkeypress</td>
+                    <td class="table-dark">Ocurre un evento onkeypress cuando el usuario deja pulsada una tecla un tiempo determinado</td>
+                    <td class="table-dark">
+                        <label for="exampleInputEmail1" class="form-label">Ingresa una tecla:</label>
+                        <input type="text" class="form-control" id="palabra4" aria-describedby="emailHelp" onkeypress="ONKEYPRESS()">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">11</th>
+                    <td class="table-dark">onkeyup</td>
+                    <td class="table-dark">Se produce cuando el usuario oprime una tecla</td>
+                    <td class="table-dark">
+                        <label for="exampleInputEmail1" class="form-label">Ingresa una tecla:</label>
+                        <input type="text" class="form-control" id="palabra5" aria-describedby="emailHelp" onkeyup="ONKEYUP()">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">12</th>
+                    <td class="table-dark">onload</td>
+                    <td class="table-dark">Este evento se desata cuando la página, o en Javascript 1.1 las imágenes,<br>ha terminado de cargarse.</td>
+                    <td class="table-dark"><a href="onload.html" type="submit" class="btn btn-outline-danger">Ver</a></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">13</th>
+                    <td class="table-dark">onmousedown</td>
+                    <td class="table-dark">Se produce el evento onmousedown cuando el usuario pulsa sobre un elemento de la página</td>
+                    <td class="table-dark">
+                        <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+                        The mouseDown() si me oprimes me volvere rojo<br>
+                        The mouseUp() si no me oprimes me quedare azul
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">14</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">15</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">16</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">17</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">18</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">19</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">20</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">21</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">22</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">23</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="table-dark">24</th>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                    <td class="table-dark"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script src="js/listado_de_eventos.js"></script>
+
+</body>
+</html>

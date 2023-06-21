@@ -1,0 +1,66 @@
+.body{
+    background-color: rgb(30,30,30);
+    color: rgb(255, 0, 0);
+}
+
+.color{
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgb(20, 20, 20);
+    margin: 1%;
+}
+
+.color2{
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgb(20, 20, 20);
+    margin: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.limits{
+    height: 50%;
+    width: 128%;
+    padding: -2%;
+}
+
+.form{
+    border: 2px solid red;
+    border-radius: 15px;
+    margin: 38%;
+    margin-bottom: 1%;
+    margin-top: 3%;
+    padding: 2%;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+}
+
+.letra{
+    color: white;
+}
+
+.contenedor{
+    margin: 1%;
+}
+
+.cont{
+    border: 1px solid red;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.const{
+    border: 1px solid red;
+    margin: 1%;
+    margin-left: 29%;
+    margin-right: 29%;
+    padding: 2%;
+    padding-bottom: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border-radius: 15px;
+}
